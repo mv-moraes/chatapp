@@ -1,0 +1,26 @@
+.user--profile{
+    height: 83%;
+    margin-top: 3rem;
+    background: #dde6ed;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .user--detail{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .user--detail{
+    background: white;
+    border-radius: 50%;
+    width: 150px;
+  }
+  .user--photo{
+    height: 50%;
+    weight: 10%;
+  }

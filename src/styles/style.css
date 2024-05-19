@@ -1,0 +1,14 @@
+.iconUser{
+    right: 577px;
+    top: 42%;
+    transform: translateY(10%);
+    font-size: 16px;
+}
+
+.iconPass{
+    position: absolute;
+    right: 600px;
+    top: 51%;
+    transform: translateY(12%);
+    font-size: 16px;
+}
