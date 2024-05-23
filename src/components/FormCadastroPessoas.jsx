@@ -51,7 +51,7 @@ const FormCadastroPessoas = ({ onSubmit, onClose }) => {
       console.log('Dados a serem enviados:', formData);
 
       // Envie os dados para o servidor
-      const response = await fetch('http://192.168.0.109:5500/api/pessoas', {
+      const response = await fetch('https://pesquisapp.com.br:5500/api/pessoas', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

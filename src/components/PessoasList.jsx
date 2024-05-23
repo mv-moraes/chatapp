@@ -11,7 +11,7 @@ const PessoasList = () => {
   useEffect(() => {
     const fetchPessoas = async () => {
       try {
-        const response = await fetch('http://192.168.0.109:5500/api/pessoas'); // Substitua pela URL da sua API de pessoas
+        const response = await fetch('https://pesquisapp.com.br:5500/api/pessoas'); // Substitua pela URL da sua API de pessoas
         if (!response.ok) {
           throw new Error('Failed to fetch pessoas');
         }

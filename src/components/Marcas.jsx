@@ -17,7 +17,7 @@ const Marcas = () => {
 
   const fetchMarcas = async () => {
     try {
-      const response = await fetch('http://192.168.0.109:5500/api/pesquisas'); // Endpoint para buscar marcas
+      const response = await fetch('https://pesquisapp.com.br:5500/api/pesquisas'); // Endpoint para buscar marcas
       if (!response.ok) {
         throw new Error('Failed to fetch data');
       }

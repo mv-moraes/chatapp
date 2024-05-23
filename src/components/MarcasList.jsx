@@ -9,7 +9,7 @@ const MarcasList = () => {
   useEffect(() => {
     const fetchPesquisas = async () => {
       try {
-        const response = await fetch('http://192.168.0.109:5500/api/pesquisas');
+        const response = await fetch('https://pesquisapp.com.br:5500/api/pesquisas');
         if (!response.ok) {
           throw new Error('Failed to fetch pesquisas');
         }

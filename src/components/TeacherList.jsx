@@ -9,7 +9,7 @@ const TeacherList = () => {
     // Função para buscar as pesquisas
     const fetchPesquisas = async () => {
       try {
-        const response = await fetch('http://192.168.0.109:5500/api/pesquisas'); // Faz a solicitação para o endpoint das pesquisas
+        const response = await fetch('https://pesquisapp.com.br:5500/api/pesquisas'); // Faz a solicitação para o endpoint das pesquisas
         if (!response.ok) {
           throw new Error('Failed to fetch pesquisas');
         }

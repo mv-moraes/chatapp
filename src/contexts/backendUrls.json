@@ -1,6 +1,6 @@
 
 {
-    "development": "http://localhost:5500/api",
-    "production": "https://your-production-url/api"
+    "development": "http://pesquisapp.com.br:5501/api",
+    "production": "http://pesquisapp.com.br:5501/api"
   }
   

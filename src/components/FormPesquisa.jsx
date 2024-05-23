@@ -56,7 +56,7 @@ const FormPesquisa = ({ onSubmit, onClose }) => {
     e.preventDefault();
     try {
       console.log('Dados a serem enviados:', formData);
-      const response = await fetch('http://192.168.0.109:5500/api/pesquisas', {
+      const response = await fetch('https://pesquisapp.com.br:5500/api/pesquisas', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

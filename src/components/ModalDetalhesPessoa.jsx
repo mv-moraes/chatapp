@@ -28,7 +28,7 @@ const ModalDetalhesPessoa = ({ pessoa, onClose }) => {
   // Função para buscar as pesquisas participantes
   const fetchPesquisasParticipantes = () => {
     if (pessoa && pessoa._id) {
-      fetch(`http://192.168.0.109:5500/api/pesquisaParticipantes/${pessoa._id}`)
+      fetch(`https://pesquisapp.com.br:5500/api/pesquisaParticipantes/${pessoa._id}`)
         .then(response => response.json())
         .then(data => {
           console.log(data); // Verificar os dados recebidos
@@ -45,7 +45,7 @@ const ModalDetalhesPessoa = ({ pessoa, onClose }) => {
 
   useEffect(() => {
     // Buscar todas as pesquisas disponíveis
-    fetch('http://192.168.0.109:5500/api/pesquisas')
+    fetch('https://pesquisapp.com.br:5500/api/pesquisas')
       .then(response => response.json())
       .then(data => {
         console.log(data); // Verificar os dados recebidos
@@ -60,7 +60,7 @@ const ModalDetalhesPessoa = ({ pessoa, onClose }) => {
       const selectedPesquisa = pesquisas.find(pesquisa => pesquisa._id === pesquisaSelecionada);
       
       if (selectedPesquisa) {
-        fetch('http://192.168.0.109:5500/api/pesquisaParticipantes', {
+        fetch('https://pesquisapp.com.br:5500/api/pesquisaParticipantes', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
